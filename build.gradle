@@ -1,0 +1,25 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Asume que cualquier versión de robocode.jar está en el directorio 'libs'
+    implementation fileTree(dir: 'libs', include: ['robocode-*.jar'])
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'RobyRew_Robots.WallsKiller'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'
+}
