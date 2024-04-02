@@ -23,3 +23,15 @@
 hs_err_pid*
 replay_pid*
 .DS_Store
+.gradle/7.4.2/checksums/checksums.lock
+.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock
+.gradle/7.4.2/executionHistory/executionHistory.bin
+.gradle/7.4.2/fileChanges/last-build.bin
+.gradle/7.4.2/executionHistory/executionHistory.lock
+.gradle/7.4.2/gc.properties
+.gradle/7.4.2/fileHashes/fileHashes.lock
+.gradle/7.4.2/dependencies-accessors/gc.properties
+.gradle/buildOutputCleanup/cache.properties
+.gradle/vcs-1/gc.properties
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/outputFiles.bin
